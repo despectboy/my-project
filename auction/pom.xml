@@ -13,6 +13,7 @@
 
 	<modules>
 		<module>auction-service</module>
+		<module>auction-rest</module>
 	</modules>
 
 	<build>

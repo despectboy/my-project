@@ -10,11 +10,13 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>auction-web-admin</artifactId>
+	<artifactId>auction-rest</artifactId>
 
-	<packaging>war</packaging>
-	<name>auction-web-admin Maven Webapp</name>
+	<name>auction-rest</name>
 	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -22,16 +24,18 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		 <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>${servlets.version}</version>
-            <scope>provided</scope>
-        </dependency>
-		 
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-web</artifactId>
+		    <version>5.0.5.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>by.kirill</groupId>
+			<artifactId>auction-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		
 	</dependencies>
-	<build>
-		<finalName>auction-web-admin</finalName>
-	</build>
 </project>
